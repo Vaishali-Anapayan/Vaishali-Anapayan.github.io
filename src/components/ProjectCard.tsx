@@ -1,19 +1,19 @@
-import { Box, Image, Link } from '@chakra-ui/react'
+import { Box, Image, Link } from "@chakra-ui/react"
 
-export type ProjectProps = {
-  title: string,
-  description: string,
-  imageUrl: string,
-  imageAlt: string,
+//const images = [Img1, Img2]
+
+export type ProjectCardProps = {
+  title: string;
+  description: string;
   link: string;
+  image: () => JSX.Element;
 }
-
-
-export function ProjectCard(props: ProjectProps) {
+//
+export function ProjectCard(props: ProjectCardProps) {
   return (
-    <Box maxW='500px' borderWidth='1px' borderRadius='lg' overflow='hidden' alignContent='center'>
+    <Box maxW='500px' borderWidth='2px' borderRadius='lg' overflow='hidden' alignContent='center'>
       <Link href={props.link}>
-        <Image src={props.imageUrl} alt={props.imageAlt} align='center' />
+      <props.image/>
       </Link>
       <Box p='4'>
         <Box
