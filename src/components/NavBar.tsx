@@ -20,6 +20,7 @@ export const NavBar = () => (
 		</TabPanel>
 		<TabPanel>
 			<p>Contact</p>
+			
 		</TabPanel>
 	</TabPanels>
 </Tabs>

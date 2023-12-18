@@ -1,5 +1,5 @@
 import { Box, Container, Grid, GridItem } from "@chakra-ui/react"
-const SKILLS = ['Javascript XML', 'React', 'Git', 'Java', 'C++', 'Microsoft Office']
+const SKILLS = ['Typescript', 'React', 'Git', 'Java', 'C++', 'Microsoft Office', 'HTML', 'CSS and SCSS']
 
 export const AboutMe = () => (
   <Container centerContent={false} margin='1'>
@@ -22,7 +22,6 @@ export const AboutMe = () => (
         Skills
       </Box>
       <Box fontSize='medium'>
-        ...
       </Box>
     </Box>
     <Grid templateColumns='repeat(3, 1fr)' gap={1}>
